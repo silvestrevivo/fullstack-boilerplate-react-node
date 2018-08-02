@@ -15,10 +15,18 @@
     "react",
     "api"
   ],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/silvestrevivo/fullstack-boilerplate-react-node/issues"
-  },
+  "authors": [
+    {
+      "name": "Silvestre Vivo",
+      "email": "silvestrevivomillan@gmail.com",
+      "url": "http://silvestrevivo.github.io/"
+    },
+    {
+      "name": "fer",
+      "email": "fer+github@ferqwerty.com",
+      "url": "http://ferqwerty.com/"
+    }
+  ],
+  "license": "MIT",
   "homepage": "https://github.com/silvestrevivo/fullstack-boilerplate-react-node#readme"
 }
