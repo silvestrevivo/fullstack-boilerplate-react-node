@@ -1,0 +1,24 @@
+{
+  "name": "fullstack-boilerplate-react-node",
+  "version": "1.0.0",
+  "description": "Fullstack boilerplate with react and node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silvestrevivo/fullstack-boilerplate-react-node.git"
+  },
+  "keywords": [
+    "node",
+    "react",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silvestrevivo/fullstack-boilerplate-react-node/issues"
+  },
+  "homepage": "https://github.com/silvestrevivo/fullstack-boilerplate-react-node#readme"
+}
