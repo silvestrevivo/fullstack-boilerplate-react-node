@@ -3,8 +3,17 @@
   "version": "1.0.0",
   "description": "Fullstack boilerplate with react and node",
   "main": "index.js",
+  "dependencies": {
+    "express": "^4.12.3",
+    "swagger-express-mw": "^0.1.0"
+  },
+  "devDependencies": {
+    "should": "^7.1.0",
+    "supertest": "^1.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-server": "node server/api/app.js",
+    "test": "swagger project test"
   },
   "repository": {
     "type": "git",
