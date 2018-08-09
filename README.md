@@ -12,6 +12,16 @@ npm i
 
 ## Run server
 
+1. Run gulp to generate latest swagger combined file:
+```
+gulp swagger-concat
+```
+
+This will generate ```server/api/swagger/swagger.yaml``` file in order
+to be used by the server app.
+
+2. Run server:
+
 ```
 npm run start-server
 ```

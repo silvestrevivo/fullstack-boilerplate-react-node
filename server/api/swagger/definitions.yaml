@@ -6,6 +6,7 @@ definitions:
     properties:
       message:
         type: string
+
   ErrorResponse:
     required:
     - message
