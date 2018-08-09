@@ -1,1 +1,1 @@
-'use strict';
+console.log('start point with client')
