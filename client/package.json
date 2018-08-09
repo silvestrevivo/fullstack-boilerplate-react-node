@@ -24,6 +24,12 @@
   },
   "homepage": "https://github.com/silvestrevivo/fullstack-boilerplate-react-node#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-react": "^6.24.1",
     "node-sass": "^4.9.3"
+  },
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
   }
 }
