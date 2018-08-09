@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/silvestrevivo/fullstack-boilerplate-react-node/issues"
   },
-  "homepage": "https://github.com/silvestrevivo/fullstack-boilerplate-react-node#readme"
+  "homepage": "https://github.com/silvestrevivo/fullstack-boilerplate-react-node#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
 }
