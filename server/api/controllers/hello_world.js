@@ -5,7 +5,7 @@ var util = require('util');
 module.exports = {
     hello: (req, res) => {
         const name = req.swagger.params.name.value || 'stranger',
-            hello = util.format('Hello, %s!', name);
+            hello = util.format('Helloxx, %s!', name);
 
         res.json(hello);
     }

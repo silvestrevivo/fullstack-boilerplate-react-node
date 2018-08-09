@@ -1,0 +1,13 @@
+swagger: '2.0'
+info:
+  version: '0.0.1'
+  title: Fullstack Boilerplate React Node
+host: localhost:10010                       # during dev, should point to your local machine
+basePath: /                                 # basePath prefixes all resource paths
+schemes:
+- http                                      # tip: remove http to make production-grade
+- https
+consumes:                                   # format of bodies a client can send (Content-Type)
+- application/json                          # format of the responses to the client (Accepts)
+produces:
+- application/json

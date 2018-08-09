@@ -1,3 +1,5 @@
+# General rules
+
 *.log
 *.pid
 *.seed
@@ -7,9 +9,12 @@
 .idea/**
 .lock-wscript
 build/Release
-config/runtime.yaml
+server/config/runtime.yaml
 coverage
 lib-cov
 logs
 node_modules
 pids
+
+# Exclude generated file, so it's rebuilt in every yaml file change
+server/api/swagger/swagger.yaml

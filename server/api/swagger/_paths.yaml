@@ -1,0 +1,23 @@
+paths:
+  /hello:                                                 # binds a127 app logic to a route
+    x-swagger-router-controller: hello_world
+    get:
+      description: Returns 'Hello' to the caller
+      operationId: hello                                  # used as the method name of the controller
+      parameters:
+      - name: name
+        in: query
+        description: The name of the person to whom to say hello
+        required: false
+        type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: '#/definitions/HelloWorldResponse'      # a pointer to a definition
+        default:                                          # responses may fall through to errors
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /swagger:
+    x-swagger-pipe: swagger_raw
