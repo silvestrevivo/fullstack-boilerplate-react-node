@@ -1,0 +1,26 @@
+{
+  "name": "client-fullstack-boilerplate-react-node",
+  "version": "1.0.0",
+  "description": "client for fullstack-boilerplate-react-node",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silvestrevivo/fullstack-boilerplate-react-node.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "react",
+    "node",
+    "parcel"
+  ],
+  "author": "@fer + @silvestrevivo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/silvestrevivo/fullstack-boilerplate-react-node/issues"
+  },
+  "homepage": "https://github.com/silvestrevivo/fullstack-boilerplate-react-node#readme"
+}
