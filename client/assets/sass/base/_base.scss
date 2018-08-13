@@ -1,0 +1,111 @@
+///////  Reset for normalize ////////
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //font-size: 10px;   =>   if we put this, we take px as absolute measeure
+  //thus 1rem = 10px   =>   on this way is easier to calculate
+  //but the best way is with % => it takes the measures of the browser
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+
+  @include respond(big-destop){
+      font-size: 70%; // 1rem = 12px, 12 / 16 = 75%
+  }
+  @include respond(tab-land){
+      font-size: 56.25%; // 1rem = 9px, 9 / 16 = 56.25%
+  }
+  @include respond(tab-port){
+      font-size: 50%; // 1rem = 8px, 8 / 16 = 50%
+  }
+  @include respond(phone){
+      font-size: 43.75%; // 1rem = 7px, 7 / 16 = 43,75%
+  }
+
+  // Thus design is done by default 1200-1800 px. Queries are for other
+  // sizes. To check them => http://sizzy.co/
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+  &::before, &::after{
+    content: '';
+    content: none;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: inherit;
+  outline: 0;
+  text-decoration: none;
+  &:active,
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+::-moz-selection{
+  text-shadow: none;
+  background-color: orangered;
+  color: #fff;
+}
+
+::selection{
+  text-shadow: none;
+  background-color: orangered;
+  color: #fff;
+}
+
+img::selection{
+  background-color: transparent;
+}
+
+img::-moz-selection{
+  background-color: transparent;
+}
+
+
+////// Base for the proyect itself //////
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: $default-font-size;
+  color: $col-primary;
+  background-color: $col-black;
+  height: 100vh;
+  // @include respond(tab-port){
+  //     padding: 0;
+  // }
+}

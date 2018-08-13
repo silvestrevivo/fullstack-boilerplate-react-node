@@ -1,0 +1,14 @@
+.logo{
+
+  &__img{
+    margin: 0 auto;
+    transform: rotate(45deg);
+    animation: Logo-spin infinite 30s linear
+  }
+
+  &__heading{
+    margin-top: 4rem;
+  }
+
+  @include absCenter;
+}
